@@ -1,4 +1,4 @@
-import { FormGroup, AbstractControl, ValidatorFn, AbstractControlOptions, AsyncValidatorFn } from "@angular/forms";
+import { FormGroup, AbstractControl, ValidatorFn, AsyncValidatorFn } from "@angular/forms";
 export declare class RxFormGroup extends FormGroup {
     private model;
     private entityObject;
@@ -8,7 +8,7 @@ export declare class RxFormGroup extends FormGroup {
         [key: string]: any;
     }, controls: {
         [key: string]: AbstractControl;
-    }, validatorOrOpts?: ValidatorFn | ValidatorFn[] | AbstractControlOptions | null, asyncValidator?: AsyncValidatorFn | AsyncValidatorFn[] | null);
+    }, validatorOrOpts?: ValidatorFn | ValidatorFn[] | null, asyncValidator?: AsyncValidatorFn | AsyncValidatorFn[] | null);
     isDirty(): boolean;
     resetForm(): void;
     getErrorSummary(onlyMessage: boolean): {
